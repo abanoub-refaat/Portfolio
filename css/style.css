@@ -18,14 +18,21 @@
   letter-spacing: 0.04em;
 }
 #hero .text a {
-  background-color: #ffc100;
+  color: #ffff;
+  background-color: #455a64;
+  transition: 0.2s;
 }
 
 #hero .img img {
   height: 550px;
 }
+#hero .text .click-me:hover {
+  background-color: #ffc100;
+  color: black;
+}
 @media (max-width: 768px) {
   #hero {
+    height: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
@@ -53,3 +60,19 @@
 /* End of The Hero Section */
 
 /* The Start of the About Section */
+#about {
+  height: fit-content;
+  background-color: #f0f0f0;
+}
+#about .about-my-work li {
+  margin: 0;
+  list-style-type: disc;
+  padding: 5px 0;
+}
+@media (max-width: 765px) {
+  #about {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+}
